@@ -56,6 +56,3 @@ echo "$PNG_FILES"
 for FILE in $PNG_FILES; do
     cp "$FILE" "$LOCAL_DIR/"
 done
-
-# append a link to the REAMDE
-echo "- [${NAME} (id $REPORT_ID)](https://htmlpreview.github.io/?https://github.com/zeroxbrock/official-contender-reports/blob/main/reports/${NAME}/$(basename "$HTML_FILE"))" >> README.md
