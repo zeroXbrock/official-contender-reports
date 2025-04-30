@@ -13,7 +13,7 @@ for dir in "$REPORTS_DIR"/*/; do
     find "$dir" -maxdepth 1 -name '*.html' | sort | while read -r file; do
         filename=$(basename "$file")
         filepath="$filename"
-        echo "<li><a href=\"/$dirname/$filepath\">$filename</a></li>" >> "$OUTPUT"
+        echo "<li><a href=\"$dirname/$filepath\">$filename</a></li>" >> "$OUTPUT"
     done
 
     echo "</ul>" >> "$OUTPUT"
